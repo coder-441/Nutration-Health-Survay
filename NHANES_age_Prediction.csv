@@ -1,0 +1,83 @@
+In,$2 %pip
+In,$2 import
+import,$2 as
+from,$2 import
+from,$2 import
+from,$2 import
+from,$2 import
+from,$2 import
+In,$2 train_df
+test_df,$2 pd.read_csv('Test_Data.csv')
+In,$2 train_df.drop(columns=['SEQN'],
+test_ids,$2 test_df['SEQN']
+test_df.drop(columns=['SEQN'],,$2 
+In,$2 train_df['RIAGENDR']
+test_df['RIAGENDR'],$2 test_df['RIAGENDR'].map({1:
+In,$2 train_df['age_group']
+In,$2 train_df
+In,$2 X
+y,$2 train_df['age_group'].astype(int)
+In,$2 imputer
+X_imputed,$2 pd.DataFrame(imputer.fit_transform(X),
+test_imputed,$2 pd.DataFrame(imputer.transform(test_df),
+In,$2 scaler
+X_scaled,$2 pd.DataFrame(scaler.fit_transform(X_imputed),
+test_scaled,$2 pd.DataFrame(scaler.transform(test_imputed),
+In,$2 X_train,
+,$2 
+In,$2 model
+model.fit(X_train,,$2 
+Out[32]:,$2 
+,$2 
+▾,$2 
+,$2 
+RandomForestClassifier,$2 
+,$2 
+i,$2 
+?,$2 
+,$2 
+RandomForestClassifier(class_weight='balanced',,$2 
+,$2 
+In,$2 y_val_pred
+val_f1,$2 f1_score(y_val,
+print("Validation,$2 Score:",
+Validation,$2 Score:
+In,$2 test_predictions
+In,$2 
+,$2 
+submission,$2 pd.DataFrame({'age_group':
+print(submission),$2 
+submission.to_csv('Submission.csv',,$2 
+0,$2 
+1,$2 
+2,$2 
+3,$2 
+4,$2 
+..,$2 
+307,$2 
+308,$2 
+309,$2 
+310,$2 
+311,$2 
+,$2 
+age_group,$2 
+0,$2 
+0,$2 
+0,$2 
+0,$2 
+0,$2 
+...,$2 
+0,$2 
+0,$2 
+0,$2 
+0,$2 
+0,$2 
+,$2 
+[312,$2 x
+In,$2 ]:
+out_filename,$2 os.path.join(save_path,'Output.csv')
+df,$2 pd.read_csv(in_filename,
+df.to_csv(out_filename,,$2 
+In,$2 ]:
+,$2 
+,$2 
