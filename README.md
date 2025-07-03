@@ -76,17 +76,3 @@ This solution is submitted for Summer Analytics 2025 hosted by CnA Club, IITG.
 The model is optimized for F1 score.
 
 All files in this repo are for educational and non-commercial use only.
-
-© 2025 | Created by [Your Name]
-
-yaml
-Copy
-Edit
-
----
-
-### Optional Add-ons:
-- Rename your notebook to `AI_hackathon.ipynb` or `NHANES_Age_Prediction.ipynb` for clarity.
-- Add a `requirements.txt` file (I can generate it for you if needed).
-
-Let me know if you want me to generate that file or customize the README with your name or GitHub 
